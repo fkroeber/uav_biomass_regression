@@ -1,2 +1,5 @@
-# uav_biomass_regression
-ML &amp; DL models for regression of fractional vegetation coverage, vegetation height &amp; vegetation volume
+# UAV-based regression of biomass variables
+
+`Scripts` contains the relevant python scripts to reproduce the results that are compiled in the report. Pre- and postprocessing of the data and model results is performed in juypter notebooks named correspondingly. For training & evaluation of each model a corresponding python script, callable from the command line, exists. Also, for most models there are additional `wrapper_*.py` calling the underlying model scripts to perform systematic hyperparameter tests or final model evaluations. 
+
+The required data sets/folder structures for the various scripts are available on the server and should enable re-learning & re-evaluation of the various models with little complication. Note that model B hasn't been trained on the LETG server but my personal laptop, so that modifications regarding the input/output paths are necessary to re-run the script on the server. If you encounter any problems, do not hestitate to contact me :)
